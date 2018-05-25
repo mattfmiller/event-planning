@@ -20,7 +20,7 @@ public class Event {
     }
 
     public int getGuests(){
-        return -1;
+        return guests;
     }
 
 }
