@@ -120,7 +120,7 @@ public class EventTest {
     }
 
     @Test
-    public void setCouponCode_setsCouponCode_1() {
+    public void setCouponCode_setsCouponCode1_1() {
         Event testEvent = new Event();
         testEvent.setCouponCode("1");
         String expected = "1";
@@ -128,10 +128,18 @@ public class EventTest {
     }
 
     @Test
-    public void setCouponCode_setsCouponCode_none() {
+    public void setCouponCode_setsCouponCode_0() {
         Event testEvent = new Event();
         testEvent.setCouponCode("3");
-        String expected = "none";
+        String expected = "0";
+        assertEquals(expected, testEvent.getCouponCode());
+    }
+
+    @Test
+    public void setCouponCode_setsCouponCode2_2() {
+        Event testEvent = new Event();
+        testEvent.setCouponCode("2");
+        String expected = "2";
         assertEquals(expected, testEvent.getCouponCode());
     }
 

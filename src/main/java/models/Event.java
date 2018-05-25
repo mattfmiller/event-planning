@@ -91,10 +91,12 @@ public class Event {
 
     public void setCouponCode(String couponCodeSelection) {
         String[] couponCodesAvailable = {"1", "2"};
-        if (Arrays.asList(couponCodesAvailable).contains(couponCodeSelection)) {
+        if (couponCodeSelection.equals("1")) {
             couponCode = couponCodeSelection;
+        } else if (couponCodeSelection.equals("2")) {
+            couponCode = "0";
         } else {
-
+            couponCode = "0";
         }
     }
 
