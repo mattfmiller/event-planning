@@ -120,6 +120,14 @@ public class EventTest {
     }
 
     @Test
+    public void setCouponCode_setsCouponCode_1() {
+        Event testEvent = new Event();
+        testEvent.setCouponCode("1");
+        String expected = "1";
+        assertEquals(expected, testEvent.getCouponCode());
+    }
+
+    @Test
     public void setPrice_setsPrice_1175() {
         Event testEvent = new Event();
         testEvent.setGuests(25);
