@@ -23,7 +23,7 @@ This application will walk the user through a set of question in order to obtain
 
 * View program by cloning repository from https://github.com/mattfmiller/doctor-lookup
 * Open project in IDE such as IntelliJ IDEA
-* Run App.java to interact with the program through the terminal
+* Run App.java to interact with the program through the console.
 
 ## Known Bugs
 
