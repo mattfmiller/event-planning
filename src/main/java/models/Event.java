@@ -89,6 +89,7 @@ public class Event {
     }
 
     public void setCouponCode(String couponCodeSelection) {
+        String[] couponCodesAvailable = {"1", "2"};
         couponCode = couponCodeSelection;
     }
 
