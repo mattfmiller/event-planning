@@ -21,13 +21,13 @@ public class App {
                 System.out.println("What kind of beverages would you like to have served at your party? punch, full bar, or none");
                 String userDrink = bufferedReader.readLine();
                 event.setDrink(userDrink.toLowerCase());
-                System.out.println("What kind of entertainment would you like to have  at your party? DJ, band, or none");
+                System.out.println("What kind of entertainment would you like to have at your party? DJ, band, or none");
                 String userEntertainment = bufferedReader.readLine();
                 event.setEntertainment(userEntertainment.toLowerCase());
                 System.out.println("Do you have a coupon code you would like to apply to this event? y/n");
                 String userHasCoupon = bufferedReader.readLine();
                 if (userHasCoupon.equals("y")){
-                    System.out.println("Go ahead and enter your coupon code now");
+                    System.out.println("Go ahead and enter your coupon code now.");
                     String userCoupon = bufferedReader.readLine();
                     event.setCouponCode(userCoupon);
                     event.applyCoupon();
@@ -35,8 +35,8 @@ public class App {
 
                 }
                 event.setPrice();
-                System.out.println(String.format("Here are the final details on your event: \n Guests: %d \n Food: %s \n Beverages %s \n Entertainment: %s \n Cost: $%s", event.getGuests(), event.getFood(), event.getDrink(), event.getEntertainment(), event.getPrice()));
-                System.out.println("Would you like to generate another quote?");
+                System.out.println(String.format("Here are the final details on your event: \n Guests: %d \n Food: %s \n Beverages: %s \n Entertainment: %s \n Cost: $%s", event.getGuests(), event.getFood(), event.getDrink(), event.getEntertainment(), event.getPrice()));
+                System.out.println("Would you like to generate another quote? y/n");
                 String userContinue = bufferedReader.readLine();
                 if (userContinue.equals("y")){
                     event = new Event();

@@ -205,4 +205,10 @@ public class EventTest {
         Double expected = 6850.00;
         assertEquals(expected, testEvent.getPrice());
     }
+
+    @Test
+    public void checkGuest_checksForValidGuestInput_True() {
+        Event testEvent = new Event();
+        assertTrue(testEvent.checkGuest("25"));
+    }
 }
