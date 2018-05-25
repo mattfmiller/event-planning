@@ -138,6 +138,9 @@ public class EventTest {
     @Test
     public void setCouponCode_setsCouponCode2_2() {
         Event testEvent = new Event();
+        testEvent.setGuests(150);
+        testEvent.setFood("dinner");
+        testEvent.setDrink("full bar");
         testEvent.setCouponCode("2");
         String expected = "2";
         assertEquals(expected, testEvent.getCouponCode());

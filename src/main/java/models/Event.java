@@ -94,7 +94,7 @@ public class Event {
         if (couponCodeSelection.equals("1")) {
             couponCode = couponCodeSelection;
         } else if (couponCodeSelection.equals("2")) {
-            couponCode = "0";
+            couponCode = "2";
         } else {
             couponCode = "0";
         }
