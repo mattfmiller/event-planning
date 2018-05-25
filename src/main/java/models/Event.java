@@ -118,6 +118,4 @@ public class Event {
         price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment));
     }
 
-
-
 }
