@@ -39,4 +39,8 @@ public class Event {
         price += additionalCosts;
     }
 
+    public void setGuests(int guestCount) {
+        guests = 0;
+    }
+
 }

@@ -53,4 +53,12 @@ public class EventTest {
         Double expected = 110.00;
         assertEquals(expected, testEvent.getPrice());
     }
+
+    @Test
+    public void setGuests_setsGuests_25() {
+        Event testEvent = new Event();
+        testEvent.setGuests(25);
+        int expected = 25;
+        assertEquals(expected, testEvent.getGuests());
+    }
 }
