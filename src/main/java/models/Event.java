@@ -134,4 +134,13 @@ public class Event {
         }
     }
 
+    public Boolean checkDrink(String guestInput){
+//        if (drinkPrices.containsKey(guestInput)) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return false;
+    }
+
 }
