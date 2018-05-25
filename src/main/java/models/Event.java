@@ -55,7 +55,7 @@ public class Event {
     }
 
     public Map<String, Double> getFoodPrices() {
-        return null;
+        return foodPrices;
     }
 
 
