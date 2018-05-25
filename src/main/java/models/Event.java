@@ -15,24 +15,28 @@ public class Event {
         this.entertainment = "none";
     }
 
-    public Double getPrice(){
+    public Double getPrice() {
         return price;
     }
 
-    public int getGuests(){
+    public int getGuests() {
         return guests;
     }
 
-    public String getFood(){
+    public String getFood() {
         return food;
     }
 
-    public String getDrink(){
+    public String getDrink() {
         return drink;
     }
 
-    public String getEntertainment(){
+    public String getEntertainment() {
         return entertainment;
+    }
+
+    public void setPrice(Double additionalCosts) {
+        price += 0.00;
     }
 
 }
