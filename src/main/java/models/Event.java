@@ -32,7 +32,7 @@ public class Event {
     }
 
     public String getEntertainment(){
-        return null;
+        return entertainment;
     }
 
 }
