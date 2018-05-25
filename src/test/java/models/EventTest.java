@@ -115,14 +115,16 @@ public class EventTest {
     }
 
     @Test
-    public void setPrice_setsPrice_110() {
+    public void setPrice_setsPrice_925() {
         Event testEvent = new Event();
         testEvent.setGuests(25);
         testEvent.setFood("snacks");
         testEvent.setDrink("full bar");
         testEvent.setEntertainment("DJ");
         testEvent.setPrice();
-        Double expected = 925.00;
+        Double expected = 1175.00;
         assertEquals(expected, testEvent.getPrice());
     }
+
+
 }
