@@ -64,8 +64,19 @@ public class App {
                 String userHasCoupon = bufferedReader.readLine();
                 if (userHasCoupon.equals("y")){
                     System.out.println("Go ahead and enter your coupon code now.");
-                    String userCoupon = bufferedReader.readLine();
-                    event.setCouponCode(userCoupon);
+                    Boolean couponInvalid = true;
+                    while (couponInvalid) {
+                        String userCoupon = bufferedReader.readLine();
+                        if (event.checkCoupon(userCoupon)){
+                            event.setCouponCode(userCoupon);
+                            couponInvalid = false;
+                        } else {
+                            System.out.println("That is not a valid coupon entry.");
+                        }
+                    }
+
+//                    String userCoupon = bufferedReader.readLine();
+//                    event.setCouponCode(userCoupon);
                     event.applyCoupon();
                 } else {
 
