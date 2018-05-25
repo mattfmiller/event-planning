@@ -23,4 +23,8 @@ public class Event {
         return guests;
     }
 
+    public String getFood(){
+        return null;
+    }
+
 }

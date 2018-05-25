@@ -25,5 +25,12 @@ public class EventTest {
         assertEquals(expected, testEvent.getGuests());
     }
 
+    @Test
+    public void newEvent_getsFood_0() throws Exception {
+        Event testEvent = new Event();
+        String expected = "none";
+        assertEquals(expected, testEvent.getFood());
+    }
+
 
 }
