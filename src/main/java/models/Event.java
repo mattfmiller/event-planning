@@ -36,7 +36,7 @@ public class Event {
     }
 
     public void setPrice(Double additionalCosts) {
-        price += 0.00;
+        price += additionalCosts;
     }
 
 }
