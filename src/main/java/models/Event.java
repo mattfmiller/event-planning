@@ -94,7 +94,11 @@ public class Event {
         if (couponCodeSelection.equals("1")) {
             couponCode = couponCodeSelection;
         } else if (couponCodeSelection.equals("2")) {
-            couponCode = "2";
+            if(guests >= 150 && (food.equals("dinner") || food.equals("dinner with dessert")) && !drink.equals("none")) {
+                couponCode = "2";
+            } else {
+                couponCode = "0";
+            }
         } else {
             couponCode = "0";
         }
