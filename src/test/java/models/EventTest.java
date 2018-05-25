@@ -32,5 +32,10 @@ public class EventTest {
         assertEquals(expected, testEvent.getFood());
     }
 
-
+    @Test
+    public void newEvent_getsDrink_0() throws Exception {
+        Event testEvent = new Event();
+        String expected = "none";
+        assertEquals(expected, testEvent.getDrink());
+    }
 }
