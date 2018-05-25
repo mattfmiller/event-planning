@@ -13,8 +13,17 @@ public class App {
         while (programRunning) {
             try {
                 System.out.println("How many guests will be attending the party?");
-                String userGuests = bufferedReader.readLine();
-                event.setGuests(Integer.parseInt(userGuests));
+                Boolean guestInvalid = true;
+                while (guestInvalid) {
+                    String userGuests = bufferedReader.readLine();
+                    if (event.checkGuest(userGuests)){
+                        event.setGuests(Integer.parseInt(userGuests));
+                        guestInvalid = false;
+                    } else {
+                        System.out.println("That is not a valid number of guests. Please enter re-enter the number of guests.");
+                    }
+                }
+
                 System.out.println("What kind of food would you like to have served at your party? snacks, dinner, dinner with dessert, or none");
                 String userFood = bufferedReader.readLine();
                 event.setFood(userFood.toLowerCase());
