@@ -28,7 +28,7 @@ public class Event {
     }
 
     public String getDrink(){
-        return null;
+        return drink;
     }
 
 }
