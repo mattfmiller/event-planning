@@ -1,5 +1,6 @@
 package models;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -90,7 +91,11 @@ public class Event {
 
     public void setCouponCode(String couponCodeSelection) {
         String[] couponCodesAvailable = {"1", "2"};
-        couponCode = couponCodeSelection;
+        if (Arrays.asList(couponCodesAvailable).contains(couponCodeSelection)) {
+            couponCode = couponCodeSelection;
+        } else {
+
+        }
     }
 
     public void setPrice() {
