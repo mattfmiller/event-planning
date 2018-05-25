@@ -106,14 +106,14 @@ public class Event {
     public void applyCoupon(){
         if (couponCode.equals("1")){
             price -= 50;
-            System.out.println(price);
+        } else if (couponCode.equals("2")){
+            entertainment = null;
         } else {
 
         }
     }
 
     public void setPrice() {
-        System.out.println(price);
         price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment));
     }
 

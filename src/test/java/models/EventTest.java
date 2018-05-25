@@ -181,16 +181,16 @@ public class EventTest {
         assertEquals(expected, testEvent.getPrice());
     }
 
-//    @Test
-//    public void setPrice_setsPriceCoupon2_975() {
-//        Event testEvent = new Event();
-//        testEvent.setGuests(25);
-//        testEvent.setFood("snacks");
-//        testEvent.setDrink("full bar");
-//        testEvent.setCouponCode("1");
-//        testEvent.setPrice();
-//        Double expected = 975.00;
-//        assertEquals(expected, testEvent.getPrice());
-//    }
+    @Test
+    public void applyCoupon_appliesCoupon2Entertainment_925() {
+        Event testEvent = new Event();
+        testEvent.setGuests(150);
+        testEvent.setFood("dinner");
+        testEvent.setDrink("full bar");
+        testEvent.setCouponCode("2");
+        testEvent.applyCoupon();
+        String expected = "DJ";
+        assertEquals(expected, testEvent.getEntertainment());
+    }
 
 }
