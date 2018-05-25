@@ -223,4 +223,10 @@ public class EventTest {
         Event testEvent = new Event();
         assertTrue(testEvent.checkDrink("punch"));
     }
+
+    @Test
+    public void checkEntertainment_checksForValidEntertainmentInput_True() {
+        Event testEvent = new Event();
+        assertTrue(testEvent.checkEntertainment("dj"));
+    }
 }
