@@ -48,7 +48,7 @@ public class Event {
     }
 
     public void setDrink(String drinkSelection) {
-        drink = null;
+        drink = drinkSelection;
     }
 
 }
