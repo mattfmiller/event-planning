@@ -70,16 +70,15 @@ public class EventTest {
         assertEquals(expected, testEvent.getDrinkPrices());
     }
 
-//    @Test
-//    public void newEvent_getsFoodPrices_map() throws Exception {
-//        Event testEvent = new Event();
-//        Map<String, Double> expected = new HashMap();
-//        expected.put("none", 0.00);
-//        expected.put("snacks", 5.00);
-//        expected.put("dinner", 15.00);
-//        expected.put("dinner with dessert", 20.00);
-//        assertEquals(expected, testEvent.getFoodPrices());
-//    }
+    @Test
+    public void newEvent_getsEntertainmentPrices_map() throws Exception {
+        Event testEvent = new Event();
+        Map<String, Double> expected = new HashMap();
+        expected.put("none", 0.00);
+        expected.put("DJ", 200.00);
+        expected.put("band", 800.00);
+        assertEquals(expected, testEvent.getEntertainmentPrices());
+    }
 
     @Test
     public void setPrice_setsPrice_110() {
