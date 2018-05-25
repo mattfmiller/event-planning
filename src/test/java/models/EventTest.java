@@ -18,5 +18,12 @@ public class EventTest {
         assertEquals(expected, testEvent.getPrice());
     }
 
+    @Test
+    public void newEvent_getsGuests_0() throws Exception {
+        Event testEvent = new Event();
+        int expected = 0;
+        assertEquals(expected, testEvent.getGuests());
+    }
+
 
 }

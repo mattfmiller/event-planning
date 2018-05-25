@@ -19,4 +19,8 @@ public class Event {
         return price;
     }
 
+    public int getGuests(){
+        return -1;
+    }
+
 }
