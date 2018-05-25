@@ -77,4 +77,12 @@ public class EventTest {
         String expected = "full bar";
         assertEquals(expected, testEvent.getDrink());
     }
+
+    @Test
+    public void setEntertainment_setsEntertainment_dj() {
+        Event testEvent = new Event();
+        testEvent.setEntertainment("DJ");
+        String expected = "DJ";
+        assertEquals(expected, testEvent.getEntertainment());
+    }
 }

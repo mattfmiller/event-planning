@@ -51,4 +51,8 @@ public class Event {
         drink = drinkSelection;
     }
 
+    public void setEntertainment(String entertainmentSelection) {
+        entertainment = null;
+    }
+
 }
