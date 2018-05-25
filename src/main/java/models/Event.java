@@ -31,4 +31,8 @@ public class Event {
         return drink;
     }
 
+    public String getEntertainment(){
+        return null;
+    }
+
 }
