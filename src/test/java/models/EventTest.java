@@ -229,4 +229,10 @@ public class EventTest {
         Event testEvent = new Event();
         assertTrue(testEvent.checkEntertainment("dj"));
     }
+
+    @Test
+    public void checkCoupon_checksForValidCouponInput_True() {
+        Event testEvent = new Event();
+        assertTrue(testEvent.checkCoupon("2"));
+    }
 }

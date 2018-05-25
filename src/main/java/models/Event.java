@@ -1,8 +1,6 @@
 package models;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Event {
     private double price;
@@ -14,6 +12,7 @@ public class Event {
     private Map<String, Double> foodPrices;
     private Map<String, Double> drinkPrices;
     private Map<String, Double> entertainmentPrices;
+    private List<String> couponCodes;
 
     public Event() {
         this.price = 100.00;
@@ -35,6 +34,9 @@ public class Event {
         entertainmentPrices.put("none", 0.00);
         entertainmentPrices.put("dj", 200.00);
         entertainmentPrices.put("band", 800.00);
+        this.couponCodes = new ArrayList<>();
+        couponCodes.add("1");
+        couponCodes.add("2");
     }
 
     public Double getPrice() {
@@ -148,6 +150,15 @@ public class Event {
         } else {
             return false;
         }
+    }
+
+    public Boolean checkCoupon(String guestInput){
+//        if (couponCodes.contains(guestInput)) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return false;
     }
 
 }
