@@ -119,7 +119,11 @@ public class Event {
     }
 
     public Boolean checkGuest(String guestInput){
-        return null;
+        if (Integer.parseInt(guestInput) > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
