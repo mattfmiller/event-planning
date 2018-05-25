@@ -83,7 +83,7 @@ public class Event {
     }
 
     public void setPrice() {
-        price += 0;
+        price += ((guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment));
     }
 
 }
