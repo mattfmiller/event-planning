@@ -32,16 +32,34 @@ public class App {
                         event.setFood(userFood.toLowerCase());
                         foodInvalid = false;
                     } else {
-                        System.out.println("That is not a valid food entry. Please enter either snacks, dinner, dinner with dessert, or none");
+                        System.out.println("That is not a valid food option. Please enter either snacks, dinner, dinner with dessert, or none");
                     }
                 }
 
                 System.out.println("What kind of beverages would you like to have served at your party? punch, full bar, or none");
-                String userDrink = bufferedReader.readLine();
-                event.setDrink(userDrink.toLowerCase());
+                Boolean drinkInvalid = true;
+                while (drinkInvalid) {
+                    String userDrink = bufferedReader.readLine();
+                    if (event.checkDrink(userDrink)){
+                        event.setDrink(userDrink.toLowerCase());
+                        drinkInvalid = false;
+                    } else {
+                        System.out.println("That is not a valid beverage option. Please enter either punch, full bar, or none");
+                    }
+                }
+
                 System.out.println("What kind of entertainment would you like to have at your party? DJ, band, or none");
-                String userEntertainment = bufferedReader.readLine();
-                event.setEntertainment(userEntertainment.toLowerCase());
+                Boolean entertainmentInvalid = true;
+                while (entertainmentInvalid) {
+                    String userEntertainment = bufferedReader.readLine();
+                    if (event.checkEntertainment(userEntertainment)){
+                        event.setEntertainment(userEntertainment.toLowerCase());
+                        entertainmentInvalid = false;
+                    } else {
+                        System.out.println("That is not a valid entertainment option. Please enter either DJ, band, or none");
+                    }
+                }
+
                 System.out.println("Do you have a coupon code you would like to apply to this event? y/n");
                 String userHasCoupon = bufferedReader.readLine();
                 if (userHasCoupon.equals("y")){
