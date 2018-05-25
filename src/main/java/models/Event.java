@@ -56,6 +56,10 @@ public class Event {
         return entertainment;
     }
 
+    public String getCouponCode() {
+        return null;
+    }
+
     public Map<String, Double> getFoodPrices() {
         return foodPrices;
     }

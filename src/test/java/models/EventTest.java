@@ -29,24 +29,31 @@ public class EventTest {
     }
 
     @Test
-    public void newEvent_getsFood_0() throws Exception {
+    public void newEvent_getsFood_none() throws Exception {
         Event testEvent = new Event();
         String expected = "none";
         assertEquals(expected, testEvent.getFood());
     }
 
     @Test
-    public void newEvent_getsDrink_0() throws Exception {
+    public void newEvent_getsDrink_none() throws Exception {
         Event testEvent = new Event();
         String expected = "none";
         assertEquals(expected, testEvent.getDrink());
     }
 
     @Test
-    public void newEvent_getsEntertainment_0() throws Exception {
+    public void newEvent_getsEntertainment_none() throws Exception {
         Event testEvent = new Event();
         String expected = "none";
         assertEquals(expected, testEvent.getEntertainment());
+    }
+
+    @Test
+    public void newEvent_getsCouponCode_none() throws Exception {
+        Event testEvent = new Event();
+        String expected = "none";
+        assertEquals(expected, testEvent.getCouponCode());
     }
 
     @Test
@@ -79,8 +86,6 @@ public class EventTest {
         expected.put("band", 800.00);
         assertEquals(expected, testEvent.getEntertainmentPrices());
     }
-
-
 
     @Test
     public void setGuests_setsGuests_25() {
@@ -125,7 +130,5 @@ public class EventTest {
         Double expected = 1175.00;
         assertEquals(expected, testEvent.getPrice());
     }
-
-
 
 }
