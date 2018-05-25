@@ -63,7 +63,7 @@ public class Event {
     }
 
     public Map<String, Double> getEntertainmentPrices() {
-        return null;
+        return entertainmentPrices;
     }
 
 
