@@ -103,12 +103,18 @@ public class Event {
         }
     }
 
-    public void setPrice() {
-        if (couponCode.equals("1")) {
-            price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment)) - 50;
+    public void applyCoupon(){
+        if (couponCode.equals("1")){
+            price -= 50;
+            System.out.println(price);
         } else {
-            price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment));
+
         }
+    }
+
+    public void setPrice() {
+        System.out.println(price);
+        price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment));
     }
 
 
