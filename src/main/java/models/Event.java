@@ -127,7 +127,11 @@ public class Event {
     }
 
     public Boolean checkFood(String guestInput){
-        return false;
+        if (foodPrices.containsKey(guestInput)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
