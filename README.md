@@ -12,18 +12,19 @@ This application will walk the user through a set of question in order to obtain
 
 | Specification | Input | Output |
 | --- | --- | --- |
-| Program will instantiate an event with no visitors or additional services for a base price | Input: N/A | Output: "Price $100" |
-| Program will set the number of guests for the event | Input: "25" | Output: "Guests: 25" |
-| Program will set food option for the event  | Input: "Snacks" | Output: "Food: Snacks" |
-| Program will set beverage option for the event | Input: "Full Bar" | Output: "Beverages: Full Bar" |
+| Program will set the number of guests for the event | Input: "150" | Output: "Guests: 150" |
+| Program will set food option for the event | Input: "Dinner" | Output: "Food: Dinner" |
+| Program will set drink option for the event | Input: "Full Bar" | Output: "Beverages: Full Bar" |
 | Program will set entertainment for the event | Input: "DJ" | Output: "Entertainment: DJ" |
-| Program will set price of event based on input options | Input: N/A | Output: "Price: $250" |
+| Program will allow user to enter a coupon code of "1" to receive a $50 discount | Input: "1" | Output: "Coupon Code: 1" |
+| Program will allow user to enter a coupon code of "2" if the event has 150+ guests, dinner, and drinks to receive free DJ service | Input: "2" | Output: "Coupon Code: 2" |
+| Program will set price of event based on input options | Input: "150", "Dinner", "Full Bar", "none", "2" | Output: "Guests: 150, Food: Dinner, Beverages: Full Bar, Entertainment: DJ, Price: $6850" |
 
 ## Setup/Installation Requirements
 
-* View program by cloning repository from https://github.com/mattfmiller/doctor-lookup
+* View program by cloning repository from https://github.com/mattfmiller/event-planning
 * Open project in IDE such as IntelliJ IDEA
-* Run App.java to interact with the program through the console.
+* Run App.java to compile the program and interact with it through the console.
 
 ## Known Bugs
 
