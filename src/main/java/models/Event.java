@@ -54,6 +54,12 @@ public class Event {
         return entertainment;
     }
 
+    public Map<String, Double> getFoodPrices() {
+        return null;
+    }
+
+
+
     public void setPrice(Double additionalCosts) {
         price += additionalCosts;
     }
