@@ -40,7 +40,7 @@ public class Event {
     }
 
     public void setGuests(int guestCount) {
-        guests = 0;
+        guests = guestCount;
     }
 
 }
