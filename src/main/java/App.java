@@ -30,10 +30,19 @@ public class App {
                     System.out.println("Go ahead and enter your coupon code now");
                     String userCoupon = bufferedReader.readLine();
                     event.setCouponCode(userCoupon);
+                    event.applyCoupon();
                 } else {
 
                 }
-
+                event.setPrice();
+                System.out.println(String.format("Here are the final details on your event: \n Guests: %d \n Food: %s \n Beverages %s \n Entertainment: %s \n Cost: $%s", event.getGuests(), event.getFood(), event.getDrink(), event.getEntertainment(), event.getPrice()));
+                System.out.println("Would you like to generate another quote?");
+                String userContinue = bufferedReader.readLine();
+                if (userContinue.equals("y")){
+                    event = new Event();
+                } else {
+                    programRunning = false;
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
