@@ -66,12 +66,6 @@ public class Event {
         return entertainmentPrices;
     }
 
-
-
-    public void setPrice(Double additionalCosts) {
-        price += additionalCosts;
-    }
-
     public void setGuests(int guestCount) {
         guests = guestCount;
     }
@@ -86,6 +80,10 @@ public class Event {
 
     public void setEntertainment(String entertainmentSelection) {
         entertainment = entertainmentSelection;
+    }
+
+    public void setPrice() {
+        price += 0;
     }
 
 }

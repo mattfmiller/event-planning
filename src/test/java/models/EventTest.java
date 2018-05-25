@@ -80,13 +80,7 @@ public class EventTest {
         assertEquals(expected, testEvent.getEntertainmentPrices());
     }
 
-    @Test
-    public void setPrice_setsPrice_110() {
-        Event testEvent = new Event();
-        testEvent.setPrice(10.00);
-        Double expected = 110.00;
-        assertEquals(expected, testEvent.getPrice());
-    }
+
 
     @Test
     public void setGuests_setsGuests_25() {
@@ -118,5 +112,17 @@ public class EventTest {
         testEvent.setEntertainment("DJ");
         String expected = "DJ";
         assertEquals(expected, testEvent.getEntertainment());
+    }
+
+    @Test
+    public void setPrice_setsPrice_110() {
+        Event testEvent = new Event();
+        testEvent.setGuests(25);
+        testEvent.setFood("snacks");
+        testEvent.setDrink("full bar");
+        testEvent.setEntertainment("DJ");
+        testEvent.setPrice();
+        Double expected = 925.00;
+        assertEquals(expected, testEvent.getPrice());
     }
 }
