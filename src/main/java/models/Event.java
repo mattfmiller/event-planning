@@ -57,7 +57,7 @@ public class Event {
     }
 
     public String getCouponCode() {
-        return null;
+        return couponCode;
     }
 
     public Map<String, Double> getFoodPrices() {
