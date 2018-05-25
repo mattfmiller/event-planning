@@ -1,11 +1,17 @@
 package models;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Event {
     private double price;
     private int guests;
     private String food;
     private String drink;
     private String entertainment;
+    private Map<String, Double> foodPrices;
+    private Map<String, Double> drinkPrices;
+    private Map<String, Double> entertainmentPrices;
 
     public Event() {
         this.price = 100.00;
@@ -13,6 +19,19 @@ public class Event {
         this.food = "none";
         this.drink = "none";
         this.entertainment = "none";
+        this.foodPrices = new HashMap();
+        foodPrices.put("none", 0.00);
+        foodPrices.put("snacks", 5.00);
+        foodPrices.put("dinner", 15.00);
+        foodPrices.put("dinner with dessert", 20.00);
+        this.drinkPrices = new HashMap();
+        drinkPrices.put("none", 0.00);
+        drinkPrices.put("punch", 5.00);
+        drinkPrices.put("full bar", 20.00);
+        this.entertainmentPrices = new HashMap();
+        entertainmentPrices.put("none", 0.00);
+        entertainmentPrices.put("DJ", 200.00);
+        entertainmentPrices.put("band", 800.00);
     }
 
     public Double getPrice() {

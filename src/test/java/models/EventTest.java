@@ -46,6 +46,13 @@ public class EventTest {
         assertEquals(expected, testEvent.getEntertainment());
     }
 
+//    @Test
+//    public void newEvent_getsFoodPrices_HashMap() throws Exception {
+//        Event testEvent = new Event();
+//        String expected = "none";
+//        assertEquals(expected, testEvent.getEntertainment());
+//    }
+
     @Test
     public void setPrice_setsPrice_110() {
         Event testEvent = new Event();
