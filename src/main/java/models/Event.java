@@ -90,7 +90,6 @@ public class Event {
     }
 
     public void setCouponCode(String couponCodeSelection) {
-        String[] couponCodesAvailable = {"1", "2"};
         if (couponCodeSelection.equals("1")) {
             couponCode = couponCodeSelection;
         } else if (couponCodeSelection.equals("2")) {
@@ -107,5 +106,7 @@ public class Event {
     public void setPrice() {
         price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment));
     }
+
+
 
 }
