@@ -9,6 +9,7 @@ public class Event {
     private String food;
     private String drink;
     private String entertainment;
+    private String couponCode;
     private Map<String, Double> foodPrices;
     private Map<String, Double> drinkPrices;
     private Map<String, Double> entertainmentPrices;
@@ -19,6 +20,7 @@ public class Event {
         this.food = "none";
         this.drink = "none";
         this.entertainment = "none";
+        this.couponCode = "none";
         this.foodPrices = new HashMap();
         foodPrices.put("none", 0.00);
         foodPrices.put("snacks", 5.00);
