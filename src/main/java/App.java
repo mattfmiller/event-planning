@@ -20,13 +20,22 @@ public class App {
                         event.setGuests(Integer.parseInt(userGuests));
                         guestInvalid = false;
                     } else {
-                        System.out.println("That is not a valid number of guests. Please enter re-enter the number of guests.");
+                        System.out.println("That is not a valid number of guests. Please re-enter the number of guests.");
                     }
                 }
 
                 System.out.println("What kind of food would you like to have served at your party? snacks, dinner, dinner with dessert, or none");
-                String userFood = bufferedReader.readLine();
-                event.setFood(userFood.toLowerCase());
+                Boolean foodInvalid = true;
+                while (foodInvalid) {
+                    String userFood = bufferedReader.readLine();
+                    if (event.checkFood(userFood)){
+                        event.setFood(userFood.toLowerCase());
+                        foodInvalid = false;
+                    } else {
+                        System.out.println("That is not a valid food entry. Please enter either snacks, dinner, dinner with dessert, or none");
+                    }
+                }
+
                 System.out.println("What kind of beverages would you like to have served at your party? punch, full bar, or none");
                 String userDrink = bufferedReader.readLine();
                 event.setDrink(userDrink.toLowerCase());
