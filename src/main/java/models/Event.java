@@ -52,7 +52,7 @@ public class Event {
     }
 
     public void setEntertainment(String entertainmentSelection) {
-        entertainment = null;
+        entertainment = entertainmentSelection;
     }
 
 }
