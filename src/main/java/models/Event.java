@@ -107,7 +107,7 @@ public class Event {
         if (couponCode.equals("1")){
             price -= 50;
         } else if (couponCode.equals("2")){
-            entertainment = null;
+            entertainment = "DJ";
         } else {
 
         }
