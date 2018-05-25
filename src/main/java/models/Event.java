@@ -16,7 +16,7 @@ public class Event {
     }
 
     public Double getPrice(){
-        return null;
+        return price;
     }
 
 }
