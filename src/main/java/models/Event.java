@@ -108,7 +108,7 @@ public class Event {
             price -= 50;
         } else if (couponCode.equals("2")){
             entertainment = "DJ";
-//            entertainmentPrices.put("DJ", 0.00);
+            entertainmentPrices.put("DJ", 0.00);
         } else {
 
         }
