@@ -153,12 +153,11 @@ public class Event {
     }
 
     public Boolean checkCoupon(String guestInput){
-//        if (couponCodes.contains(guestInput)) {
-//            return true;
-//        } else {
-//            return false;
-//        }
-        return false;
+        if (couponCodes.contains(guestInput)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
