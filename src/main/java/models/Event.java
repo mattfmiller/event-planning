@@ -8,11 +8,15 @@ public class Event {
     private String entertainment;
 
     public Event() {
-        this.price = 0.00;
+        this.price = 100.00;
         this.guests = 0;
         this.food = "none";
         this.beverage = "none";
         this.entertainment = "none";
+    }
+
+    public Double getPrice(){
+        return null;
     }
 
 }

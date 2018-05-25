@@ -10,4 +10,13 @@ public class EventTest {
         Event testEvent = new Event();
         assertTrue(testEvent instanceof Event);
     }
+
+    @Test
+    public void newEvent_getsPrice_100() throws Exception {
+        Event testEvent = new Event();
+        Double expected = 100.00;
+        assertEquals(expected, testEvent.getPrice());
+    }
+
+
 }
