@@ -89,7 +89,7 @@ public class Event {
     }
 
     public void setCouponCode(String couponCodeSelection) {
-        couponCode = null;
+        couponCode = couponCodeSelection;
     }
 
     public void setPrice() {
