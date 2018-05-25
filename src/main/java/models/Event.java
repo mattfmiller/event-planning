@@ -33,7 +33,7 @@ public class Event {
         drinkPrices.put("full bar", 20.00);
         this.entertainmentPrices = new HashMap();
         entertainmentPrices.put("none", 0.00);
-        entertainmentPrices.put("DJ", 200.00);
+        entertainmentPrices.put("dj", 200.00);
         entertainmentPrices.put("band", 800.00);
     }
 
@@ -107,8 +107,8 @@ public class Event {
         if (couponCode.equals("1")){
             price -= 50;
         } else if (couponCode.equals("2")){
-            entertainment = "DJ";
-            entertainmentPrices.put("DJ", 0.00);
+            entertainment = "dj";
+            entertainmentPrices.put("dj", 0.00);
         } else {
 
         }

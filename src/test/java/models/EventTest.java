@@ -82,7 +82,7 @@ public class EventTest {
         Event testEvent = new Event();
         Map<String, Double> expected = new HashMap();
         expected.put("none", 0.00);
-        expected.put("DJ", 200.00);
+        expected.put("dj", 200.00);
         expected.put("band", 800.00);
         assertEquals(expected, testEvent.getEntertainmentPrices());
     }
@@ -114,8 +114,8 @@ public class EventTest {
     @Test
     public void setEntertainment_setsEntertainment_dj() {
         Event testEvent = new Event();
-        testEvent.setEntertainment("DJ");
-        String expected = "DJ";
+        testEvent.setEntertainment("dj");
+        String expected = "dj";
         assertEquals(expected, testEvent.getEntertainment());
     }
 
@@ -162,7 +162,7 @@ public class EventTest {
         testEvent.setGuests(25);
         testEvent.setFood("snacks");
         testEvent.setDrink("full bar");
-        testEvent.setEntertainment("DJ");
+        testEvent.setEntertainment("dj");
         testEvent.setPrice();
         Double expected = 1175.00;
         assertEquals(expected, testEvent.getPrice());
@@ -189,7 +189,7 @@ public class EventTest {
         testEvent.setDrink("full bar");
         testEvent.setCouponCode("2");
         testEvent.applyCoupon();
-        String expected = "DJ";
+        String expected = "dj";
         assertEquals(expected, testEvent.getEntertainment());
     }
 
