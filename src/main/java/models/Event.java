@@ -43,4 +43,8 @@ public class Event {
         guests = guestCount;
     }
 
+    public void setFood(String foodSelection) {
+        food = null;
+    }
+
 }

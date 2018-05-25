@@ -61,4 +61,12 @@ public class EventTest {
         int expected = 25;
         assertEquals(expected, testEvent.getGuests());
     }
+
+    @Test
+    public void setFood_setsFood_snacks() {
+        Event testEvent = new Event();
+        testEvent.setFood("snacks");
+        String expected = "snacks";
+        assertEquals(expected, testEvent.getFood());
+    }
 }
