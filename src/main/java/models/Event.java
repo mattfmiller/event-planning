@@ -104,7 +104,11 @@ public class Event {
     }
 
     public void setPrice() {
-        price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment));
+        if (couponCode.equals("1")) {
+            price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment)) - 50;
+        } else {
+            price += ((guests * 10) + (guests * foodPrices.get(food)) + (guests * drinkPrices.get(drink)) + entertainmentPrices.get(entertainment));
+        }
     }
 
 
