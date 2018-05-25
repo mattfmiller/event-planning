@@ -211,4 +211,10 @@ public class EventTest {
         Event testEvent = new Event();
         assertTrue(testEvent.checkGuest("25"));
     }
+
+    @Test
+    public void checkFood_checksForValidFoodInput_True() {
+        Event testEvent = new Event();
+        assertTrue(testEvent.checkFood("dinner"));
+    }
 }

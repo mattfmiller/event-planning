@@ -126,4 +126,8 @@ public class Event {
         }
     }
 
+    public Boolean checkFood(String guestInput){
+        return false;
+    }
+
 }
