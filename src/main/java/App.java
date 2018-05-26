@@ -71,12 +71,15 @@ public class App {
                             event.setCouponCode(userCoupon);
                             couponInvalid = false;
                         } else {
-                            System.out.println("That is not a valid coupon entry.");
+                            System.out.println("That is not a valid coupon entry. Would you like to retry? y/n");
+                            String userRetry = bufferedReader.readLine();
+                            if (userRetry.equals("y")){
+                                System.out.println("Go ahead and enter your coupon code now.");
+                            } else {
+                                couponInvalid = false;
+                            }
                         }
                     }
-
-//                    String userCoupon = bufferedReader.readLine();
-//                    event.setCouponCode(userCoupon);
                     event.applyCoupon();
                 } else {
 
